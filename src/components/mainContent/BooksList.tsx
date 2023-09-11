@@ -11,6 +11,8 @@ const BooksList = () => {
     (state) => state.booksList
   );
 
+  console.log(booksList);
+
   const inputSearchValue = useAppSelector(
     (state) => state.inputSearch.inputSearch.value
   );
@@ -48,7 +50,7 @@ const BooksList = () => {
                 title={o.volumeInfo.title}
                 authors={o.volumeInfo.authors || []}
                 categories={o.volumeInfo.categories || []}
-                image={o.volumeInfo.imageLinks.thumbnail}
+                image={o.volumeInfo.imageLinks?.thumbnail || ""}
                 description={o.volumeInfo.description || ""}
                 id={o.id}
                 key={o.id}

@@ -15,10 +15,12 @@ const schemaBookList = z.object({
         title: z.string(),
         authors: z.array(z.string()).optional(),
         categories: z.array(z.string()).optional(),
-        imageLinks: z.object({
-          smallThumbnail: z.string(),
-          thumbnail: z.string(),
-        }),
+        imageLinks: z
+          .object({
+            smallThumbnail: z.string(),
+            thumbnail: z.string().optional(),
+          })
+          .optional(),
         description: z.string().optional(),
       }),
     })
