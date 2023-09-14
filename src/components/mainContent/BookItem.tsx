@@ -40,7 +40,7 @@ const BookItem = ({
           <p className="font-weight-bold">
             <strong>
               {title.split(" ").length > 5
-                ? title.split(" ").splice(0, 4).join(" ")
+                ? title.split(" ").splice(0, 8).join(" ")
                 : title}
             </strong>
           </p>

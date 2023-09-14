@@ -60,7 +60,7 @@ const Header = () => {
             <input
               className="form-control border-end-0 border rounded-pill"
               type="search"
-              id="example-search-input"
+              id="search-input"
               value={inputSearchValue}
               onChange={onChangeHandler}
               onKeyDown={keyDownEventHandler}
